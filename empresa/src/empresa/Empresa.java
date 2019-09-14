@@ -17,7 +17,7 @@ public class Empresa {
 		
 	}
 	
-	public void cargarArray() {
+	public ArrayList <Empleado> cargarArray() {
 		ArrayEmpleado = new ArrayList<Empleado>();
 		Persona p1=new Persona ("roberto gomez", 25, true, 2, 498, "permanente");
 		Persona p2=new Persona ("gonzalo arias", 32, false,0, 512, "permanente");
@@ -35,6 +35,7 @@ public class Empresa {
 		ArrayEmpleado.add(2, emp3);
 		ArrayEmpleado.add(3, emp4);
 			
+		return ArrayEmpleado;
 		
 	}
 
