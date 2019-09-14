@@ -1,19 +1,16 @@
 package empresa;
 
-public class EmpEfectivo extends Empleado {
+public class EmpGerente extends Empleado {
 
 	
-	public EmpEfectivo(int hsTrabajadas, double valorHora, Persona empleado, int antiguedad,double valorAntiguedad,double salarioFamiliar, double plusXesposa) {
+	public EmpGerente(int hsTrabajadas, double valorHora, Persona empleado, int antiguedad,double valorAntiguedad,double salarioFamiliar, double plusXesposa) {
 		super(hsTrabajadas, valorHora,empleado,antiguedad,valorAntiguedad,salarioFamiliar,plusXesposa);
 		
 	}
-	
-	
-	
-	
-	
+
+	@Override
 	public double calcularSueldo(Empleado x) {
-		double sueldo;
+double sueldo;
 	
 		
 		sueldo=(this.hsTrabajadas*this.valorHora)+(this.antiguedad*this.valorAntiguedad)+(empleado.getCantHijos()*this.salarioFamiliar);
@@ -22,11 +19,10 @@ public class EmpEfectivo extends Empleado {
 			
 		}
 		return sueldo;
+		
 	}
-
-
 	
 	
 	
-
+	
 }
