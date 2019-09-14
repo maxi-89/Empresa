@@ -13,8 +13,11 @@ public class EmpEfectivo extends Empleado {
 	
 	
 	@Override
-	public void calcularSueldo() {
-		// TODO Auto-generated method stub
+	public double calcularSueldo() {
+		
+		
+		
+		return sueldo;
 		
 	}
 
