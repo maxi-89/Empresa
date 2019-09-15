@@ -43,7 +43,7 @@ public class Empresa {
 	double sueldoTotal=0;
 	int i;
 	
-	for(i=0;i<=ArrayEmpleado.size();i++) {
+	for(i=0;i<ArrayEmpleado.size();i++) {
 		sueldoTotal=sueldoTotal+this.ArrayEmpleado.get(i).calcularSueldo(ArrayEmpleado.get(i));
 		
 	}
